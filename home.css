@@ -1,0 +1,333 @@
+* {
+    /* Styles that apply to all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Styles that apply to the body element */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+}
+.main_box{
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.main_box .background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.main_box .sidebar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+}
+.main_box .sidebar-menu .header{
+
+    z-index: 2;
+}
+.sidebar-menu .logo a{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.profile{
+    width: 150px;
+    height: 80px;
+    background-color: #ffd0ec;
+    color: red;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.profile .image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.profile h1{
+    font-size: 20px;
+    color: #474f7a;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+.profile h2{
+    font-size: 20px;
+    color: #474f7a;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.bar-item{
+    width: 200px;
+    height: 47.8px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar-item:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.wrapper{
+    margin-left: 200px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    z-index: 2;
+}
+.wrapper section{
+    height: 100vh;
+    width: 100%;
+    background-color: #264653;
+    border-bottom: 2px solid black;
+    z-index: 2;
+}
+.bar-item .join-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+ul li i{
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+}
+.join-us i{
+    font-size: 25px;
+    color: white;
+    z-index: 2;
+}
+.join-us .fa-facebook-f{
+    color: white;
+    position: absolute;
+    left: 20px;
+}
+.join-us .fa-facebook-f:hover{
+    color: #1877f2;
+}
+.join-us .fa-youtube{
+    color: white;
+    position: absolute;
+    left: 130px;
+}
+.join-us .fa-youtube:hover{
+    color: #ff0000;
+}
+.join-us .fa-instagram{
+    color: white;
+    position: absolute;
+    left: 50px;
+}
+.join-us .fa-instagram:hover{
+    color: #dd2a7b;
+}
+.join-us .fa-x-twitter{
+    color: white;
+    position: absolute;
+    left: 90px;
+}
+.join-us .fa-x-twitter:hover{
+    color: #888b90;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+section .contact-us{
+
+    z-index: 2;
+}
+.contact-us .container{
+    height: 80vh;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #287271;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
+}
+.contact-us .container .contact1{
+    width: 100%;
+    font-size: 50px;
+    margin-left: -10px;
+    margin-top: 25px;
+    color :#e9c46a;
+    position: relative;
+}
+.contact-us .container .contact2{
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: 25px;
+    color :#e9c46a;
+}
+.container .email{
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    padding-left: 8px;
+}
+textarea{
+    height: 60%;
+    width: 80%;
+}
+.submit{
+    height:30px;
+    width: 70px;
+    border-radius:10px;
+    border: none;
+    background-color: #f4a261;
+}
+.submit:hover{
+    background-color: #e76f51;
+}
+
+.login-form{
+    height: 600px;
+    width: 1000px;
+    background-color:#287271 ;
+    border-radius: 30px;
+    border: 2px solid #e9c46a;
+}
+.log-in{
+    height:30px;
+    width:498px;
+    font-size:20px;
+    background-color: #fdd995;
+    color: #3d405b;
+    border: none;
+    border-top-left-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in:hover{
+    background-color: #faaf6a;
+}
+.sign-up{
+    height:30px;
+    width:498px;
+    font-size:20px;
+    background-color: #fdd995;
+    border: none;
+    border-top-right-radius: 27px;
+    margin: 0;
+    margin-left: 498px;
+    margin-top: -30px;
+    color: #3d405b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up:hover{
+    background-color: #faaf6a;
+}
+.login-form a{
+    text-decoration: none;
+}
+.form{
+    border: 1px solid black;
+    height: 566px;
+    width: 996;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+    background-color: white;
+    align-self: flex-end;
+    overflow: hidden;
+}
+.form .user-in{
+    height: 566px;
+    width: 996px;
+    background-color: white;
+    z-index: 2;
+}
+.container2{
+    height: 100%;
+    width: 100%;
+    background-color: #013c58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 .custom{
+    height: 90%;
+    width: 70%;
+    background-color: #287271;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+}
+.custom .order{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #a8e8f9;
+    border: 1px solid black;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.order ::-webkit-scrollbar{
+    display: none;
+}
+.custom .banner{
+    height: 22%;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.order-now{
+    height: 100vh;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+form #userid{
+    font-size: 25px;
+}
